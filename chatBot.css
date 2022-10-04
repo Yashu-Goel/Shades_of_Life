@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap");
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+body {
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("Background.jpg");
+  font-size: 20px;
+}
+.chat{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 13px;
+    margin: 200px;
+
+}
+#chatlog{
+    text-align: center;
+    background: -webkit-linear-gradient( #1CB5E0 , #000046);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+.input_box{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 3px 7px;
+    color: #000046;
+}

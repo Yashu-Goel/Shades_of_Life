@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            know = {
+                "hello" : "Hi how are you felling today?",
+                "fine" : "Okay so tell me what do you mean by happiness",
+                "a state of joy" : "Preciously, Happiness is an emotional state characterized positive emotions and life satisfaction. Then telll me what make you happy?",
+                "there are many things" : "Okay then list any 5 of them",
+                "my mom" : " ",
+                "ice cream" : " ",
+                "working out" : " ",
+                "listening to music" : " ",
+                "reading good books" : "Very well! now assisgn a color for each the mention things",
+                "pink" : " ",
+                "orange" : " ",
+                "blue" : " ",
+                "yellow" : " ",
+                "green" : "Nice, so I would request you to make a human figure and fill out the colors in the different parts of drawing according to sensations you feel.",
+                "ok!" : ":)",
+            };
+            function talk() {
+                var user = document.getElementById("userBox").value;
+                document.getElementById("userBox").value = "";
+                document.getElementById("chatLog").innerHTML += user+"<br>";
+                if (user in know) {
+                    document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+                } else {
+                    document.getElementById("chatLog").innerHTML += "I don't understand...<br>";
+                }
+            } 
+        </script>
+            <link rel="stylesheet" href="chatBot.css">
+
+    </head>
+    <body>
+        <div class="chat">
+            <p id="chatLog">Welcome to Chat Bot<br></p>
+            <div class="input_box">
+                <input id="userBox" type="text" placeholder="Enter Message" onkeydown="if (event.keyCode == 13) {talk()}">    
+
+            </div>
+        </div>
+    </body>
+</html>
